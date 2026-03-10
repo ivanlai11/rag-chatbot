@@ -137,6 +137,7 @@ rag-chatbot/
 │   └── utils.py
 ├── chroma_db/
 └── screenshots/
+```
 
 ---
 
