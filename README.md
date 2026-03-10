@@ -122,10 +122,13 @@ The system follows a standard RAG workflow:
 ```text
 rag-chatbot/
 ├── app.py
+├── app_huge.py
 ├── requirements.txt
 ├── README.md
 ├── ARCHITECTURE.md
 ├── TECHNICAL_WRITEUP.md
+├── start_public.ps1
+├── start_public.bat
 ├── demo/
 ├── data/
 │   ├── raw_articles/
