@@ -1,0 +1,16 @@
+feedparser
+pandas
+requests
+trafilatura
+lxml
+lxml_html_clean
+langchain
+langchain-core
+langchain-openai
+langchain-chroma
+langchain-text-splitters
+langchain-community
+langchain-huggingface
+langchain-ollama
+sentence-transformers
+streamlit

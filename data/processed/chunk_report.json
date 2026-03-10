@@ -1,0 +1,7 @@
+{
+  "total_chunks": 353,
+  "avg_chunks_per_document": 5.983050847457627,
+  "max_chunks_for_one_document": 16,
+  "min_chunks_for_one_document": 1,
+  "documents_chunked": 59
+}

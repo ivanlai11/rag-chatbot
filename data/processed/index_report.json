@@ -1,0 +1,10 @@
+{
+  "indexed_at": "2026-03-10T02:04:22.450440Z",
+  "persist_directory": "chroma_db",
+  "documents_indexed": 59,
+  "chunks_created": 353,
+  "vectors_in_collection": 353,
+  "rebuild_used": true,
+  "embedding_model": "HuggingFaceEmbeddings(sentence-transformers/all-mpnet-base-v2)",
+  "vector_store": "Chroma"
+}
