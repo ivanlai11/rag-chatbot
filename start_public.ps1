@@ -70,7 +70,8 @@ Write-Host ""
 # [Fix 3] Run Cloudflare in the original window, safely intercept the URL, and open the browser
 $publicUrlOpened = $false
 
-& $cloudflaredExe tunnel --url http://localhost:8501 2>&1 | ForEach-Object {
+# [Fix 4] Use 127.0.0.1 instead of localhost to prevent IPv6 resolution issues
+& $cloudflaredExe tunnel --url http://127.0.0.1:8501 2>&1 | ForEach-Object {
     $line = $_.ToString()
     Write-Host $line
     
@@ -79,8 +80,11 @@ $publicUrlOpened = $false
         $publicUrl = $matches[0]
         Write-Host ""
         Write-Host "Public URL detected: $publicUrl" -ForegroundColor Green
-        Write-Host "Opening public URL in browser..." -ForegroundColor Green
-        Start-Process $publicUrl
+        Write-Host "Waiting 4 seconds for Cloudflare tunnel to stabilize before opening..." -ForegroundColor Yellow
+        
+        # [Fix 5] Open browser asynchronously after a short delay so we don't block the tunnel setup
+        Start-Process powershell -WindowStyle Hidden -ArgumentList "-Command", "Start-Sleep -Seconds 4; Start-Process '$publicUrl'"
+        
         $publicUrlOpened = $true
     }
 }
