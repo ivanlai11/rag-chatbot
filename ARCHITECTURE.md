@@ -1,4 +1,3 @@
-```markdown
 # ARCHITECTURE.md
 
 ## AI & Technology News RAG Chatbot
@@ -570,4 +569,3 @@ Its main design strengths are:
 - built-in testing support
 
 Together, these components create a domain-specific chatbot that is transparent, inspectable, and aligned with the technical goals of the assignment.
-```

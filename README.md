@@ -1,4 +1,3 @@
-````markdown
 # AI & Technology News RAG Chatbot
 
 A production-ready Retrieval-Augmented Generation (RAG) chatbot built for AI and technology news.  
@@ -138,7 +137,6 @@ rag-chatbot/
 │   └── utils.py
 ├── chroma_db/
 └── screenshots/
-````
 
 ---
 

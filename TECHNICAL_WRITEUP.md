@@ -1,4 +1,3 @@
-```markdown
 # TECHNICAL_WRITEUP.md
 
 ## AI & Technology News RAG Chatbot
@@ -239,4 +238,3 @@ This project successfully implements a production-style RAG chatbot for AI and t
 The final system demonstrates how a domain-specific chatbot can be made more accurate and transparent by grounding generation in retrieved evidence. It also shows the practical challenges involved in building a local, end-to-end RAG system, including extraction noise, metadata consistency, retrieval quality, and local generation tradeoffs.
 
 Overall, the project meets the technical objectives of the assignment while also providing a strong foundation for future improvement.
-```
